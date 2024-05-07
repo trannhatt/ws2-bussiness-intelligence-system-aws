@@ -1,5 +1,5 @@
 # Change the default theme to be use when building the site with Hugo
-BaseURL = "https://github.com/trannhatt/ws2-bussiness-intelligence-system-aws.git"
+BaseURL = "https://trannhatt.github.io/ws2-bussiness-intelligence-system-aws"
 theme = "hugo-theme-learn"
 
 # For search functionality
