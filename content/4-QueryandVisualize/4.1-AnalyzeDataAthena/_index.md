@@ -13,22 +13,22 @@ pre: " <b> 4.1 </b> "
    - Click on the search bar and type **`athena`**
    - Under **Services**, select **Athena**
 
-![Query Athena](/images/4.1-AnalyzeDataAthena/0001-queryathena.png?featherlight=false&width=70pc)
+![Query Athena](/ws2-bussiness-intelligence-system-aws/images/4.1-AnalyzeDataAthena/0001-queryathena.png?featherlight=false&width=70pc)
 
 2. In the **Amazon Athena** interface:
 
    - Choose **Query your data with Trino SQL**
    - Select **Launch query editor**
 
-![Query Athena](/images/4.1-AnalyzeDataAthena/0002-queryathena.png?featherlight=false&width=70pc)
+![Query Athena](/ws2-bussiness-intelligence-system-aws/images/4.1-AnalyzeDataAthena/0002-queryathena.png?featherlight=false&width=70pc)
 
 {{% notice note %}}
 If this is your first time using Athena, you need to set the location of S3 to store query results. In the **Query editor**, select **Edit settings**. Next, create a new folder in the previously created S3 bucket to store query results. Following the pattern **`s3://xxxxxxxxxxx/athena-query-results/`**, where **`xxxxxxxxxxx`** is the name of the S3 bucket. Select **Save** to complete the storage configuration.
 {{% /notice %}}
 
-![Query Athena](/images/4.1-AnalyzeDataAthena/0003.1-queryathena.png?featherlight=false&width=70pc)
+![Query Athena](/ws2-bussiness-intelligence-system-aws/images/4.1-AnalyzeDataAthena/0003.1-queryathena.png?featherlight=false&width=70pc)
 
-![Query Athena](/images/4.1-AnalyzeDataAthena/0004.1-queryathena.png?featherlight=false&width=70pc)
+![Query Athena](/ws2-bussiness-intelligence-system-aws/images/4.1-AnalyzeDataAthena/0004.1-queryathena.png?featherlight=false&width=70pc)
 
 3. Now, let's query data with Athena. First, create a new database named **mydatabase**.
 
@@ -39,7 +39,7 @@ If this is your first time using Athena, you need to set the location of S3 to s
 CREATE DATABASE IF NOT EXISTS mydatabase
 ```
 
-![Query Athena](/images/4.1-AnalyzeDataAthena/0005-queryathena.png?featherlight=false&width=70pc)
+![Query Athena](/ws2-bussiness-intelligence-system-aws/images/4.1-AnalyzeDataAthena/0005-queryathena.png?featherlight=false&width=70pc)
 
 ### Creating a Table
 
@@ -73,13 +73,13 @@ LOCATION
   's3://xxxxxxxxxxxxxxx/json-data'
 ```
 
-![Query Athena](/images/4.1-AnalyzeDataAthena/0006-queryathena.png?featherlight=false&width=70pc)
+![Query Athena](/ws2-bussiness-intelligence-system-aws/images/4.1-AnalyzeDataAthena/0006-queryathena.png?featherlight=false&width=70pc)
 
 5. The query executes successfully as shown in the image
 
    - The table named **retail_trans_json** will be created and displayed on the left control panel under **Tables**.
 
-![Query Athena](/images/4.1-AnalyzeDataAthena/0007-queryathena.png?featherlight=false&width=70pc)
+![Query Athena](/ws2-bussiness-intelligence-system-aws/images/4.1-AnalyzeDataAthena/0007-queryathena.png?featherlight=false&width=70pc)
 
 {{% notice note %}}
 If encountering an error, check if you have updated the S3 bucket name under **LOCATION** correctly, and make sure you have selected **mydatabase** under **Database** and **AwsDataCatalog** as **Data source**.
@@ -94,7 +94,7 @@ If encountering an error, check if you have updated the S3 bucket name under **L
 MSCK REPAIR TABLE mydatabase.retail_trans_json
 ```
 
-![Query Athena](/images/4.1-AnalyzeDataAthena/0008-queryathena.png?featherlight=false&width=70pc)
+![Query Athena](/ws2-bussiness-intelligence-system-aws/images/4.1-AnalyzeDataAthena/0008-queryathena.png?featherlight=false&width=70pc)
 
 {{% notice note %}}
 We can list all partitions in the Athena table in unsorted order by running the query below.
@@ -104,7 +104,7 @@ We can list all partitions in the Athena table in unsorted order by running the 
 SHOW PARTITIONS mydatabase.retail_trans_json
 ```
 
-![Query Athena](/images/4.1-AnalyzeDataAthena/0009-queryathena.png?featherlight=false&width=70pc)
+![Query Athena](/ws2-bussiness-intelligence-system-aws/images/4.1-AnalyzeDataAthena/0009-queryathena.png?featherlight=false&width=70pc)
 
 ### Querying Data
 
@@ -119,9 +119,9 @@ FROM retail_trans_json
 LIMIT 10
 ```
 
-![Query Athena](/images/4.1-AnalyzeDataAthena/0010-queryathena.png?featherlight=false&width=70pc)
+![Query Athena](/ws2-bussiness-intelligence-system-aws/images/4.1-AnalyzeDataAthena/0010-queryathena.png?featherlight=false&width=70pc)
 
-![Query Athena](/images/4.1-AnalyzeDataAthena/0011-queryathena.png?featherlight=false&width=70pc)
+![Query Athena](/ws2-bussiness-intelligence-system-aws/images/4.1-AnalyzeDataAthena/0011-queryathena.png?featherlight=false&width=70pc)
 
 {{% notice info %}}
 We can experiment with writing different SQL commands to query, filter, and sort data based on various conditions. At this point, we have understood how Amazon Athena helps query data in Amazon S3 conveniently without the need for any database servers.

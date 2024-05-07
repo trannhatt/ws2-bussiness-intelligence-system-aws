@@ -10,7 +10,7 @@ pre: " <b> 5. </b> "
 
 This section delves into real-time data analysis, where we will create Amazon OpenSearch Service, add common libraries to AWS Lambda Layer, create and configure AWS Lambda Function, activate the AWS Lambda Function to ingest records into Amazon OpenSearch, and visualize data with Kibana. We will learn how to analyze real-time data effectively and visualize detailed insights to serve decision-making purposes.
 
-![Architecture Workshop 2 - part 5](/images/5/arch5.png?featherlight=false&width=70pc)
+![Architecture Workshop 2 - part 5](/ws2-bussiness-intelligence-system-aws/images/5/arch5.png?featherlight=false&width=70pc)
 
 ### Contents
 

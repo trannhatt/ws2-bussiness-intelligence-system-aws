@@ -10,7 +10,7 @@ pre: " <b> 3. </b> "
 
 Phần này tập trung vào quá trình thu thập và lưu trữ dữ liệu. Chúng ta sẽ tìm hiểu việc nhận dữ liệu đầu vào bằng Kinesis Data Streams, lưu trữ dữ liệu vào S3 bằng Kinesis Data Firehose và xác minh hoạt động của đường dẫn dữ liệu.
 
-![Architecture Workshop 2 - part 3](/images/3/arch3.png?featherlight=false&width=70pc)
+![Architecture Workshop 2 - part 3](/ws2-bussiness-intelligence-system-aws/images/3/arch3.png?featherlight=false&width=70pc)
 
 ### Nội dung
 

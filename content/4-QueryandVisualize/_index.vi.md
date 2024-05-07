@@ -8,7 +8,7 @@ pre: " <b> 4. </b> "
 
 ### Giới thiệu
 
-![Architecture Workshop 2 - part 4](/images/4/arch4.png?featherlight=false&width=70pc)
+![Architecture Workshop 2 - part 4](/ws2-bussiness-intelligence-system-aws/images/4/arch4.png?featherlight=false&width=70pc)
 
 #### Nội dung
 

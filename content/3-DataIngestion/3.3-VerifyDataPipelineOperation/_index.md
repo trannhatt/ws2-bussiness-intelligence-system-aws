@@ -21,7 +21,7 @@ python3 gen_kinesis_data.py \
   --stream-name retail-trans
 ```
 
-![Verify Data](/images/3.3-VerifyDataPipelineOperation/0001-verifydata.png?featherlight=false&width=70pc)
+![Verify Data](/ws2-bussiness-intelligence-system-aws/images/3.3-VerifyDataPipelineOperation/0001-verifydata.png?featherlight=false&width=70pc)
 
 {{% notice note %}}
 After executing the above command, wait for approximately 5 to 10 minutes for the data to be processed and delivered to the S3 Bucket.
@@ -29,7 +29,7 @@ After executing the above command, wait for approximately 5 to 10 minutes for th
 
 3. Access the previously created S3 Bucket. We can observe that the raw data has been distributed to S3 by Kinesis Data Firehose and stored with the directory structure of **year=.../ -> month=.../ -> day=.../ -> hour=.../**.
 
-![Verify Data](/images/3.3-VerifyDataPipelineOperation/0002-verifydata.png?featherlight=false&width=70pc)
+![Verify Data](/ws2-bussiness-intelligence-system-aws/images/3.3-VerifyDataPipelineOperation/0002-verifydata.png?featherlight=false&width=70pc)
 
 4. Additionally, we can adjust the number of records distributed to S3 using the **--max-count MAX_COUNT** option.
 
@@ -41,14 +41,14 @@ python3 gen_kinesis_data.py \
   --max-count 100
 ```
 
-![Verify Data](/images/3.3-VerifyDataPipelineOperation/0003-verifydata.png?featherlight=false&width=70pc)
+![Verify Data](/ws2-bussiness-intelligence-system-aws/images/3.3-VerifyDataPipelineOperation/0003-verifydata.png?featherlight=false&width=70pc)
 
 5. Check the data recently distributed to S3 to ensure that the process is operating correctly and synchronously.
 
-![Verify Data](/images/3.3-VerifyDataPipelineOperation/0004-verifydata.png?featherlight=false&width=70pc)
+![Verify Data](/ws2-bussiness-intelligence-system-aws/images/3.3-VerifyDataPipelineOperation/0004-verifydata.png?featherlight=false&width=70pc)
 
 {{% notice info %}}
 If you want to learn more about using this command, you can run **`python3 gen_kinesis_data.py --help`** to see available options and parameters.
 {{% /notice %}}
 
-![Verify Data](/images/3.3-VerifyDataPipelineOperation/0005-verifydata.png?featherlight=false&width=70pc)
+![Verify Data](/ws2-bussiness-intelligence-system-aws/images/3.3-VerifyDataPipelineOperation/0005-verifydata.png?featherlight=false&width=70pc)

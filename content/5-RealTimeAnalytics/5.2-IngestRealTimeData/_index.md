@@ -11,7 +11,7 @@ pre: " <b> 5.2 </b> "
 1. - Under **Bucket type**, select **General purpose**
    - Under **Bucket name**, enter **`xxxxxxxxxxxxxxxxxx`**. Here, **`xxxxxxxxxxxxxxxxxx`** is your S3 bucket name
 
-![Create S3 Bucket](/images/5.2-IngestRealTimeData/createlayer-0002.png?featherlight=false&width=70pc)
+![Create S3 Bucket](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-0002.png?featherlight=false&width=70pc)
 
 2. In the **Default encryption** section,
 
@@ -19,7 +19,7 @@ pre: " <b> 5.2 </b> "
    - Under **Bucket Key**, select **Enable**
    - Finally, select **Create bucket** to create the S3 Bucket
 
-![Create S3 Bucket](/images/5.2-IngestRealTimeData/createlayer-0003.png?featherlight=false&width=70pc)
+![Create S3 Bucket](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-0003.png?featherlight=false&width=70pc)
 
 ### Create Library and Upload Files to S3
 
@@ -43,13 +43,13 @@ Note that **`xxxxxxxxxxxxxxxxxx`** is the S3 bucket name, replace it with the na
 (es-lib) $ deactivate
 ```
 
-![Create Python Package](/images/5.2-IngestRealTimeData/createlayer-0001.png?featherlight=false&width=70pc)
+![Create Python Package](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-0001.png?featherlight=false&width=70pc)
 
-![Create Python Package](/images/5.2-IngestRealTimeData/createlayer-0004.png?featherlight=false&width=70pc)
+![Create Python Package](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-0004.png?featherlight=false&width=70pc)
 
-![Create Python Package](/images/5.2-IngestRealTimeData/createlayer-0005.png?featherlight=false&width=70pc)
+![Create Python Package](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-0005.png?featherlight=false&width=70pc)
 
-![Create Python Package](/images/5.2-IngestRealTimeData/createlayer-0006.png?featherlight=false&width=70pc)
+![Create Python Package](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-0006.png?featherlight=false&width=70pc)
 
 {{% notice info %}}
 If you are unable to create the Python package on Amazon Linux, create it in a Lambda-like environment simulated with Docker using the commands below.
@@ -71,7 +71,7 @@ $ aws s3 cp es-lib.zip s3://xxxxxxxxxxxxxxxxxx/var/
 Before proceeding to the next step, let's access the Python package in S3 to copy the **Object URL**
 {{% /notice %}}
 
-![Create Python Package](/images/5.2-IngestRealTimeData/createlayer-0009.png?featherlight=false&width=70pc)
+![Create Python Package](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-0009.png?featherlight=false&width=70pc)
 
 ### Add a Common Library to the Layer for Use with Lambda Function
 
@@ -79,14 +79,14 @@ Before proceeding to the next step, let's access the Python package in S3 to cop
 
    - Type **`lambda`** in the search bar and select **Lambda** under **Services**
 
-![Create Layer](/images/5.2-IngestRealTimeData/createlayer-0007.png?featherlight=false&width=70pc)
+![Create Layer](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-0007.png?featherlight=false&width=70pc)
 
 5. In the **AWS Lambda** interface,
 
    - Select **Layers**
    - Click on **Create layer**
 
-![Create Python Package](/images/5.2-IngestRealTimeData/createlayer-0008.png?featherlight=false&width=70pc)
+![Create Python Package](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-0008.png?featherlight=false&width=70pc)
 
 6. In the **Create layer** interface,
 
@@ -98,14 +98,14 @@ Before proceeding to the next step, let's access the Python package in S3 to cop
    - In the **Amazon S3 link URL** field, paste the URL copied earlier
    - In the **Compatible runtimes - optional** field, select **Python 3.11**
 
-![Create Python Package](/images/5.2-IngestRealTimeData/createlayer-00010.png?featherlight=false&width=70pc)
+![Create Python Package](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00010.png?featherlight=false&width=70pc)
 
 7. Finally, click **Create** to complete the creation and configuration of the Layer
 
-![Create Python Package](/images/5.2-IngestRealTimeData/createlayer-00011.png?featherlight=false&width=70pc)
+![Create Python Package](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00011.png?featherlight=false&width=70pc)
 
 8. Verify that the Layer has been successfully created
 
-![Create Python Package](/images/5.2-IngestRealTimeData/createlayer-00012.png?featherlight=false&width=70pc)
+![Create Python Package](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00012.png?featherlight=false&width=70pc)
 
-![Create Python Package](/images/5.2-IngestRealTimeData/createlayer-00013.png?featherlight=false&width=70pc)
+![Create Python Package](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00013.png?featherlight=false&width=70pc)

@@ -13,7 +13,7 @@ pre: " <b> 5.3 </b> "
    - Chọn **Functions**
    - Chọn **Create function**
 
-![Configure Lambda Function](/images/5.2-IngestRealTimeData/createlayer-00014.png?featherlight=false&width=70pc)
+![Configure Lambda Function](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00014.png?featherlight=false&width=70pc)
 
 2.  Tại giao diện **Create function**
 
@@ -22,19 +22,19 @@ pre: " <b> 5.3 </b> "
     - Tại mục **Function name**, nhập **`UpsertToES`**
     - Tại mục **Runtime**, chọn **Python 3.11**
 
-![Configure Lambda Function](/images/5.2-IngestRealTimeData/createlayer-00015.png?featherlight=false&width=70pc)
+![Configure Lambda Function](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00015.png?featherlight=false&width=70pc)
 
 3. Các lựa chọn còn lại chúng ta sẽ để giá trị mặc định, cuối cùng chọn **Create function** để hoàn tất việc tạo Lambda Function
 
-![Configure Lambda Function](/images/5.2-IngestRealTimeData/createlayer-00016.png?featherlight=false&width=70pc)
+![Configure Lambda Function](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00016.png?featherlight=false&width=70pc)
 
 4. Kết quả việc tạo Lambda Function thành công
 
-![Configure Lambda Function](/images/5.2-IngestRealTimeData/createlayer-00017.png?featherlight=false&width=70pc)
+![Configure Lambda Function](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00017.png?featherlight=false&width=70pc)
 
 5. Di chuyển xuống cuối trang hiện tại, trong phần **Layers** chọn **Add a layer**
 
-![Configure Lambda Function](/images/5.2-IngestRealTimeData/createlayer-00018.png?featherlight=false&width=70pc)
+![Configure Lambda Function](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00018.png?featherlight=false&width=70pc)
 
 ### Cấu hình AWS Lambda Function
 
@@ -47,18 +47,18 @@ pre: " <b> 5.3 </b> "
    - Tại mục **Version**, chọn phiên bản mới nhất đã tạo
    - Cuối cùng, chọn **Add** để hoàn tất việc tạo Layer
 
-![Configure Lambda Function](/images/5.2-IngestRealTimeData/createlayer-00019.png?featherlight=false&width=70pc)
+![Configure Lambda Function](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00019.png?featherlight=false&width=70pc)
 
 7. Tiếp theo, chúng ta sẽ sao chép và dán mã từ tệp **upsert_to_es.py** vào trình soạn thảo mã của **Code source** và chọn **Deploy**
 
-![Configure Lambda Function](/images/5.2-IngestRealTimeData/createlayer-00021.png?featherlight=false&width=70pc)
+![Configure Lambda Function](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00021.png?featherlight=false&width=70pc)
 
 8. Sau đó, chọn tab **Configuration**
 
    - Chọn **Environment variables**
    - Chọn **Edit**
 
-![Configure Lambda Function](/images/5.2-IngestRealTimeData/createlayer-00023.png?featherlight=false&width=70pc)
+![Configure Lambda Function](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00023.png?featherlight=false&width=70pc)
 
 9. Thêm lần lược từng biến môi trường như cấu trúc bên dưới
 
@@ -84,7 +84,7 @@ DATE_TYPE_FIELDS=InvoiceDate
 
 - chọn **Save** để lưu thay đổi
 
-![Configure Lambda Function](/images/5.2-IngestRealTimeData/createlayer-00024.png?featherlight=false&width=70pc)
+![Configure Lambda Function](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00024.png?featherlight=false&width=70pc)
 
 10. Để thực thi Lambda Function trong VPC và đọc dữ liệu từ Kinesis Data Streams, chúng ta cần thêm IAM Policy cần thiết để thực thi Lambda Function.
 
@@ -93,11 +93,11 @@ DATE_TYPE_FIELDS=InvoiceDate
     - Chọn **Permissions**
     - Tại mục **Role name**, chọn **UpsertToES-role-xxxxxxx**
 
-![Configure Lambda Function](/images/5.2-IngestRealTimeData/createlayer-00025.png?featherlight=false&width=70pc)
+![Configure Lambda Function](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00025.png?featherlight=false&width=70pc)
 
 11. Chọn **Add permissions** và chọn **Attach policies**.
 
-![Configure Lambda Function](/images/5.2-IngestRealTimeData/createlayer-00026.png?featherlight=false&width=70pc)
+![Configure Lambda Function](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00026.png?featherlight=false&width=70pc)
 
 12. Trong phần **Other permissions policies**
 
@@ -105,11 +105,11 @@ DATE_TYPE_FIELDS=InvoiceDate
     - Chọn **AWSLambdaVPCAccessExecutionRole** vừa tìm được
     - Cuối cùng chọn **Add permissions**
 
-![Configure Lambda Function](/images/5.2-IngestRealTimeData/createlayer-00027.png?featherlight=false&width=70pc)
+![Configure Lambda Function](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00027.png?featherlight=false&width=70pc)
 
 13. Tiếp tục chọn **Add permissions** và chọn **Attach policies**.
 
-![Configure Lambda Function](/images/5.2-IngestRealTimeData/createlayer-00028.png?featherlight=false&width=70pc)
+![Configure Lambda Function](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00028.png?featherlight=false&width=70pc)
 
 14. Trong phần **Other permissions policies**
 
@@ -117,11 +117,11 @@ DATE_TYPE_FIELDS=InvoiceDate
     - Chọn **AmazonKinesisReadOnlyAccess** vừa tìm được
     - Cuối cùng chọn **Add permissions**
 
-![Configure Lambda Function](/images/5.2-IngestRealTimeData/createlayer-00029.png?featherlight=false&width=70pc)
+![Configure Lambda Function](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00029.png?featherlight=false&width=70pc)
 
 15. Chọn **Add permissions** và chọn **Create inline policy**.
 
-![Configure Lambda Function](/images/5.2-IngestRealTimeData/createlayer-00031.png?featherlight=false&width=70pc)
+![Configure Lambda Function](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00031.png?featherlight=false&width=70pc)
 
 16. Trong phần **Policy editors**
 
@@ -166,21 +166,21 @@ Lưu ý rằng bạn hãy thay thế **region** và **account-id** phù hợp ch
 
 - Cuối cùng chọn **Next** để qua bước tiếp theo
 
-![Configure Lambda Function](/images/5.2-IngestRealTimeData/createlayer-00034.png?featherlight=false&width=70pc)
+![Configure Lambda Function](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00034.png?featherlight=false&width=70pc)
 
 17. Trong phần **Review and create**
 
     - Tại mục **Policy name**, nhập **`UpsertToESDefaultPolicyWS2`**
     - Chọn **Create policy**
 
-![Configure Lambda Function](/images/5.2-IngestRealTimeData/createlayer-00035.png?featherlight=false&width=70pc)
+![Configure Lambda Function](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00035.png?featherlight=false&width=70pc)
 
 18. Tại tab **Configuration**
 
     - Chọn **VPC**
     - Chọn **Edit**
 
-![Configure VPC](/images/5.2-IngestRealTimeData/createlayer-00036.png?featherlight=false&width=70pc)
+![Configure VPC](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00036.png?featherlight=false&width=70pc)
 
 19. Trong giao diện **Edit VPC**
 
@@ -188,17 +188,17 @@ Lưu ý rằng bạn hãy thay thế **region** và **account-id** phù hợp ch
     - Tại mục **Subnets**, chọn **project-businesss-intelligence-system-subnet-private2-us-east-1b** và **project-businesss-intelligence-system-subnet-private1-us-east-1a**
     - Tại mục **Security groups**, chọn **use-es-cluster-sg**
 
-![Configure VPC](/images/5.2-IngestRealTimeData/createlayer-00037.png?featherlight=false&width=70pc)
+![Configure VPC](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00037.png?featherlight=false&width=70pc)
 
 20. Chọn **Save** để hoàn tất việc cấu hình VPC
 
-![Configure VPC](/images/5.2-IngestRealTimeData/createlayer-00038.png?featherlight=false&width=70pc)
+![Configure VPC](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00038.png?featherlight=false&width=70pc)
 
-![Configure VPC](/images/5.2-IngestRealTimeData/createlayer-00039.png?featherlight=false&width=70pc)
+![Configure VPC](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00039.png?featherlight=false&width=70pc)
 
 21. chọn **Add trigger**
 
-![Add Trigger](/images/5.2-IngestRealTimeData/createlayer-00040.png?featherlight=false&width=70pc)
+![Add Trigger](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00040.png?featherlight=false&width=70pc)
 
 22. Trong giao diện **Add trigger**
 
@@ -208,8 +208,8 @@ Lưu ý rằng bạn hãy thay thế **region** và **account-id** phù hợp ch
     - Tại mục **Kinesis stream**, chọn **kinesis/retail-trans**
     - Chọn **Add** để hoàn tất việc thêm trigger
 
-![Add Trigger](/images/5.2-IngestRealTimeData/createlayer-00042.png?featherlight=false&width=70pc)
+![Add Trigger](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00042.png?featherlight=false&width=70pc)
 
 23. Kiểm tra trigger đã được thêm thành công
 
-![Add Trigger](/images/5.2-IngestRealTimeData/createlayer-00043.png?featherlight=false&width=70pc)
+![Add Trigger](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00043.png?featherlight=false&width=70pc)

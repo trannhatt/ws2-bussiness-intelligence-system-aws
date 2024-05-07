@@ -13,14 +13,14 @@ pre: " <b> 4.3 </b> "
    - Nhấn chọn thanh tìm kiếm và nhập **`sagemaker`**
    - Tại mục **Services** chọn **Amazon SageMaker**
 
-![SageMaker](/images/4.3-AthenaAndSageMaker/sagemaker-0001.png?featherlight=false&width=70pc)
+![SageMaker](/ws2-bussiness-intelligence-system-aws/images/4.3-AthenaAndSageMaker/sagemaker-0001.png?featherlight=false&width=70pc)
 
 2. Tại giao diện **Amazon SageMaker**
 
    - Chọn **Notebook instances**
    - Chọn **Create notebook instance**
 
-![SageMaker](/images/4.3-AthenaAndSageMaker/sagemaker-0003.png?featherlight=false&width=70pc)
+![SageMaker](/ws2-bussiness-intelligence-system-aws/images/4.3-AthenaAndSageMaker/sagemaker-0003.png?featherlight=false&width=70pc)
 
 3. Tại giao diện **Create notebook instance**
 
@@ -29,23 +29,23 @@ pre: " <b> 4.3 </b> "
    - Tại mục **Notebook instance name**, nhập **`bi-system-sagemaker`**
    - Tại mục **Notebook instance tvpe**, chọn **ml.t3.medium**
 
-![SageMaker](/images/4.3-AthenaAndSageMaker/sagemaker-0002.png?featherlight=false&width=70pc)
+![SageMaker](/ws2-bussiness-intelligence-system-aws/images/4.3-AthenaAndSageMaker/sagemaker-0002.png?featherlight=false&width=70pc)
 
 4. Tiếp tục, trong phần **Permissions and encryption**, chúng ta cần chọn role cho notebook instance trong Amazon SageMaker để tương tác với Amazon S3. Nếu chưa có, tại mục **IAM role** chọn **Create a new role**
 
-![SageMaker](/images/4.3-AthenaAndSageMaker/sagemaker-0004.png?featherlight=false&width=70pc)
+![SageMaker](/ws2-bussiness-intelligence-system-aws/images/4.3-AthenaAndSageMaker/sagemaker-0004.png?featherlight=false&width=70pc)
 
 5. Trong phần **Create an IAM role**, chọn **Any S3 bucket** và chọn **Create role**
 
-![SageMaker](/images/4.3-AthenaAndSageMaker/sagemaker-0005.png?featherlight=false&width=70pc)
+![SageMaker](/ws2-bussiness-intelligence-system-aws/images/4.3-AthenaAndSageMaker/sagemaker-0005.png?featherlight=false&width=70pc)
 
 6. Sau khi IAM role được tạo, hãy nhấp vào đường dẫn màu xanh để đến trang IAM role trong một cửa sổ mới. Ở đây, chúng ta sẽ thêm quyền IAM để cho phép SageMaker truy cập vào Athena.
 
-![SageMaker](/images/4.3-AthenaAndSageMaker/sagemaker-0006.png?featherlight=false&width=70pc)
+![SageMaker](/ws2-bussiness-intelligence-system-aws/images/4.3-AthenaAndSageMaker/sagemaker-0006.png?featherlight=false&width=70pc)
 
 7. Chọn **Add permissions** và chọn **Attach policies**.
 
-![SageMaker](/images/4.3-AthenaAndSageMaker/sagemaker-0007.png?featherlight=false&width=70pc)
+![SageMaker](/ws2-bussiness-intelligence-system-aws/images/4.3-AthenaAndSageMaker/sagemaker-0007.png?featherlight=false&width=70pc)
 
 8. Trong phần **Other permissions policies**
 
@@ -53,19 +53,19 @@ pre: " <b> 4.3 </b> "
    - Chọn **AmazonAthenaFullAccess** vừa tìm được
    - Cuối cùng chọn **Add permissions**
 
-![SageMaker](/images/4.3-AthenaAndSageMaker/sagemaker-0008.png?featherlight=false&width=70pc)
+![SageMaker](/ws2-bussiness-intelligence-system-aws/images/4.3-AthenaAndSageMaker/sagemaker-0008.png?featherlight=false&width=70pc)
 
 9. Chúng ta sẽ thấy một police đã được thêm vào IAM role này thành công
 
-![SageMaker](/images/4.3-AthenaAndSageMaker/sagemaker-0009.png?featherlight=false&width=70pc)
+![SageMaker](/ws2-bussiness-intelligence-system-aws/images/4.3-AthenaAndSageMaker/sagemaker-0009.png?featherlight=false&width=70pc)
 
 10. Quay lại giao diện **Create notebook instance**, tất cả các tùy chọn khác chúng ta để giá trị mặc định và chọn **Create notebook instance**
 
-![SageMaker](/images/4.3-AthenaAndSageMaker/sagemaker-00010.png?featherlight=false&width=70pc)
+![SageMaker](/ws2-bussiness-intelligence-system-aws/images/4.3-AthenaAndSageMaker/sagemaker-00010.png?featherlight=false&width=70pc)
 
 11. Đợi notebook instance tạo thành công, trạng thái sẽ được đổi thành **InService**. Khi đó chọn **Open Jupyter**
 
-![SageMaker](/images/4.3-AthenaAndSageMaker/sagemaker-00011.png?featherlight=false&width=70pc)
+![SageMaker](/ws2-bussiness-intelligence-system-aws/images/4.3-AthenaAndSageMaker/sagemaker-00011.png?featherlight=false&width=70pc)
 
 ### Kết nối SageMaker Jupyter notebook với Athena
 
@@ -75,7 +75,7 @@ pre: " <b> 4.3 </b> "
     - Sau đó chọn **conda_python3** cho kernel.
     - Thao tác này sẽ mở notebook trong tab mới.
 
-![SageMaker](/images/4.3-AthenaAndSageMaker/sagemaker-00012.png?featherlight=false&width=70pc)
+![SageMaker](/ws2-bussiness-intelligence-system-aws/images/4.3-AthenaAndSageMaker/sagemaker-00012.png?featherlight=false&width=70pc)
 
 13. Trong **notebook**,
 
@@ -87,7 +87,7 @@ pre: " <b> 4.3 </b> "
 !pip install PyAthena[SQLAlchemy]
 ```
 
-![SageMaker](/images/4.3-AthenaAndSageMaker/sagemaker-00013.png?featherlight=false&width=70pc)
+![SageMaker](/ws2-bussiness-intelligence-system-aws/images/4.3-AthenaAndSageMaker/sagemaker-00013.png?featherlight=false&width=70pc)
 
 ### Thao tác với Pandas
 
@@ -102,7 +102,7 @@ df = pd.read_sql("SELECT * FROM mydatabase.retail_trans_json LIMIT 10;", conn)
 df
 ```
 
-![SageMaker](/images/4.3-AthenaAndSageMaker/sagemaker-00014.png?featherlight=false&width=70pc)
+![SageMaker](/ws2-bussiness-intelligence-system-aws/images/4.3-AthenaAndSageMaker/sagemaker-00014.png?featherlight=false&width=70pc)
 
 {{% notice info %}}
 Region của bạn: nhập lệnh bên dưới để xem region AWS hiện tại, đãm bảo region trùng với S3 bucket và database.
@@ -126,7 +126,7 @@ plt.xticks(rotation=45)
 plt.show()
 ```
 
-![SageMaker](/images/4.3-AthenaAndSageMaker/sagemaker-00019.png?featherlight=false&width=70pc)
+![SageMaker](/ws2-bussiness-intelligence-system-aws/images/4.3-AthenaAndSageMaker/sagemaker-00019.png?featherlight=false&width=70pc)
 
 1.  Chúng ta có thể sử dụng mô hình Linear Regression để dự đoán số lượng hàng bán ra dựa trên giá. Bằng cách này, chúng ta có thể xem xét mối quan hệ giữa giá và số lượng hàng bán ra, một phần quan trọng của phân tích dữ liệu kinh doanh và tiếp thị, như ví dụ bên dưới chúng ta bạn sẽ vẽ biểu đồ dữ liệu bằng thư viện matplotlib.
 
@@ -152,4 +152,4 @@ plt.grid(True)
 plt.show()
 ```
 
-![SageMaker](/images/4.3-AthenaAndSageMaker/sagemaker-00015.png?featherlight=false&width=70pc)
+![SageMaker](/ws2-bussiness-intelligence-system-aws/images/4.3-AthenaAndSageMaker/sagemaker-00015.png?featherlight=false&width=70pc)

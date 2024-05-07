@@ -21,7 +21,7 @@ python3 gen_kinesis_data.py \
   --stream-name retail-trans
 ```
 
-![Verify Data](/images/3.3-VerifyDataPipelineOperation/0001-verifydata.png?featherlight=false&width=70pc)
+![Verify Data](/ws2-bussiness-intelligence-system-aws/images/3.3-VerifyDataPipelineOperation/0001-verifydata.png?featherlight=false&width=70pc)
 
 {{% notice note %}}
 Sau khi thực thi lệnh trên, đợi khoảng 5 đến 10 phút để dữ liệu được xử lý và phân phối đến S3 Bucket.
@@ -29,7 +29,7 @@ Sau khi thực thi lệnh trên, đợi khoảng 5 đến 10 phút để dữ li
 
 3.  Truy cập vào S3 Bucket đã được tạo trước đó. Chúng ta có thể thấy dữ liệu gốc đã được Kinesis Data Firehose phân phối đến S3 và được lưu trữ theo cấu trúc thư mục là **year=.../ -> month=.../ -> day=.../ -> hour=.../**.
 
-![Verify Data](/images/3.3-VerifyDataPipelineOperation/0002-verifydata.png?featherlight=false&width=70pc)
+![Verify Data](/ws2-bussiness-intelligence-system-aws/images/3.3-VerifyDataPipelineOperation/0002-verifydata.png?featherlight=false&width=70pc)
 
 4. Ngoài ra, chúng ta có thể điều chỉnh số lượng record được phân phối đến S3 bằng cách sử dụng tùy chọn **--max-count MAX_COUNT**
 
@@ -41,14 +41,14 @@ python3 gen_kinesis_data.py \
   --max-count 100
 ```
 
-![Verify Data](/images/3.3-VerifyDataPipelineOperation/0003-verifydata.png?featherlight=false&width=70pc)
+![Verify Data](/ws2-bussiness-intelligence-system-aws/images/3.3-VerifyDataPipelineOperation/0003-verifydata.png?featherlight=false&width=70pc)
 
 5. Kiểm tra dữ liệu vừa được phân phối đến S3 để đảm bảo rằng quy trình hoạt động một cách chính xác và đồng bộ.
 
-![Verify Data](/images/3.3-VerifyDataPipelineOperation/0004-verifydata.png?featherlight=false&width=70pc)
+![Verify Data](/ws2-bussiness-intelligence-system-aws/images/3.3-VerifyDataPipelineOperation/0004-verifydata.png?featherlight=false&width=70pc)
 
 {{% notice info %}}
 Nếu bạn muốn biết thêm về cách sử dụng lệnh này, bạn có thể chạy lệnh **`python3 gen_kinesis_data.py --help`** để xem các tùy chọn và tham số có sẵn.
 {{% /notice %}}
 
-![Verify Data](/images/3.3-VerifyDataPipelineOperation/0005-verifydata.png?featherlight=false&width=70pc)
+![Verify Data](/ws2-bussiness-intelligence-system-aws/images/3.3-VerifyDataPipelineOperation/0005-verifydata.png?featherlight=false&width=70pc)

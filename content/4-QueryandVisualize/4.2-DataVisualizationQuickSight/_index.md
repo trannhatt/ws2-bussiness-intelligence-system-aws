@@ -13,29 +13,29 @@ pre: " <b> 4.2 </b> "
    - Click on the search bar and type **`quicksight`**
    - Under **Services**, select **QuickSight**
 
-![Visualization QuickSight](/images/4.2-DataVisualizationQuickSight/0001-quicksight.png?featherlight=false&width=70pc)
+![Visualization QuickSight](/ws2-bussiness-intelligence-system-aws/images/4.2-DataVisualizationQuickSight/0001-quicksight.png?featherlight=false&width=70pc)
 
 2. To use the **Standard Edition**, select **here**
 
-![Visualization QuickSight](/images/4.2-DataVisualizationQuickSight/0002-quicksight.png?featherlight=false&width=70pc)
+![Visualization QuickSight](/ws2-bussiness-intelligence-system-aws/images/4.2-DataVisualizationQuickSight/0002-quicksight.png?featherlight=false&width=70pc)
 
-![Visualization QuickSight](/images/4.2-DataVisualizationQuickSight/0003-quicksight.png?featherlight=false&width=70pc)
+![Visualization QuickSight](/ws2-bussiness-intelligence-system-aws/images/4.2-DataVisualizationQuickSight/0003-quicksight.png?featherlight=false&width=70pc)
 
 3. Sign up for an account, then select **Go to Amazon QuickSight**
 
-![Visualization QuickSight](/images/4.2-DataVisualizationQuickSight/0004-quicksight.png?featherlight=false&width=70pc)
+![Visualization QuickSight](/ws2-bussiness-intelligence-system-aws/images/4.2-DataVisualizationQuickSight/0004-quicksight.png?featherlight=false&width=70pc)
 
 4. Click **New analysis**
 
-![Visualization QuickSight](/images/4.2-DataVisualizationQuickSight/0005-quicksight.png?featherlight=false&width=70pc)
+![Visualization QuickSight](/ws2-bussiness-intelligence-system-aws/images/4.2-DataVisualizationQuickSight/0005-quicksight.png?featherlight=false&width=70pc)
 
 5. Choose **New dataset**
 
-![Visualization QuickSight](/images/4.2-DataVisualizationQuickSight/0006-quicksight.png?featherlight=false&width=70pc)
+![Visualization QuickSight](/ws2-bussiness-intelligence-system-aws/images/4.2-DataVisualizationQuickSight/0006-quicksight.png?featherlight=false&width=70pc)
 
 6. Select **Athena**
 
-![Visualization QuickSight](/images/4.2-DataVisualizationQuickSight/0007-quicksight.png?featherlight=false&width=70pc)
+![Visualization QuickSight](/ws2-bussiness-intelligence-system-aws/images/4.2-DataVisualizationQuickSight/0007-quicksight.png?featherlight=false&width=70pc)
 
 7. In the **New Athena data source** section,
 
@@ -44,7 +44,7 @@ pre: " <b> 4.2 </b> "
    - Select **Validate connection** to ensure it shows **Validated**
    - Finally, click **Create data source**
 
-![Visualization QuickSight](/images/4.2-DataVisualizationQuickSight/0008-quicksight.png?featherlight=false&width=50pc)
+![Visualization QuickSight](/ws2-bussiness-intelligence-system-aws/images/4.2-DataVisualizationQuickSight/0008-quicksight.png?featherlight=false&width=50pc)
 
 8. Next, in the **Choose your table** section,
 
@@ -53,11 +53,11 @@ pre: " <b> 4.2 </b> "
    - Under **Tables: contain the data you can visualize**, select **retail_trans_json**
    - Finally, click **Select**
 
-![Visualization QuickSight](/images/4.2-DataVisualizationQuickSight/0009-quicksight.png?featherlight=false&width=50pc)
+![Visualization QuickSight](/ws2-bussiness-intelligence-system-aws/images/4.2-DataVisualizationQuickSight/0009-quicksight.png?featherlight=false&width=50pc)
 
 9. In the **Finish dataset creation** section, select **Directly query your data** and then click **Visualize**
 
-![Visualization QuickSight](/images/4.2-DataVisualizationQuickSight/0010-quicksight.png?featherlight=false&width=50pc)
+![Visualization QuickSight](/ws2-bussiness-intelligence-system-aws/images/4.2-DataVisualizationQuickSight/0010-quicksight.png?featherlight=false&width=50pc)
 
 10. Suppose we want to visualize **price** and **quantity** by **invoice**.
 
@@ -65,6 +65,6 @@ pre: " <b> 4.2 </b> "
     - Then drag **invoice** from the **Data** pane on the left to **X AXIS**, and drag **price** and **quantity** to **VALUE**.
     - You will see a chart as shown in the image
 
-![Visualization QuickSight](/images/4.2-DataVisualizationQuickSight/0012-quicksight.png?featherlight=false&width=70pc)
+![Visualization QuickSight](/ws2-bussiness-intelligence-system-aws/images/4.2-DataVisualizationQuickSight/0012-quicksight.png?featherlight=false&width=70pc)
 
 ### Share Dashboard with Other

@@ -13,7 +13,7 @@ pre: " <b> 5.3 </b> "
    - Select **Functions**
    - Click on **Create function**
 
-![Configure Lambda Function](/images/5.2-IngestRealTimeData/createlayer-00014.png?featherlight=false&width=70pc)
+![Configure Lambda Function](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00014.png?featherlight=false&width=70pc)
 
 2. In the **Create function** interface,
 
@@ -22,19 +22,19 @@ pre: " <b> 5.3 </b> "
    - Enter **`UpsertToES`** in the **Function name** field
    - Choose **Python 3.11** for the **Runtime**
 
-![Configure Lambda Function](/images/5.2-IngestRealTimeData/createlayer-00015.png?featherlight=false&width=70pc)
+![Configure Lambda Function](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00015.png?featherlight=false&width=70pc)
 
 3. Leave the other options as default, and finally click **Create function** to complete the Lambda Function creation.
 
-![Configure Lambda Function](/images/5.2-IngestRealTimeData/createlayer-00016.png?featherlight=false&width=70pc)
+![Configure Lambda Function](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00016.png?featherlight=false&width=70pc)
 
 4. Successful creation of the Lambda Function.
 
-![Configure Lambda Function](/images/5.2-IngestRealTimeData/createlayer-00017.png?featherlight=false&width=70pc)
+![Configure Lambda Function](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00017.png?featherlight=false&width=70pc)
 
 5. Scroll down to the bottom of the current page, in the **Layers** section, select **Add a layer**.
 
-![Configure Lambda Function](/images/5.2-IngestRealTimeData/createlayer-00018.png?featherlight=false&width=70pc)
+![Configure Lambda Function](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00018.png?featherlight=false&width=70pc)
 
 ### Configure AWS Lambda Function
 
@@ -47,18 +47,18 @@ pre: " <b> 5.3 </b> "
    - Select the latest version created for the **Version**
    - Finally, click **Add** to complete the Layer creation.
 
-![Configure Lambda Function](/images/5.2-IngestRealTimeData/createlayer-00019.png?featherlight=false&width=70pc)
+![Configure Lambda Function](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00019.png?featherlight=false&width=70pc)
 
 7. Next, copy and paste the code from the **upsert_to_es.py** file into the code editor of **Code source**, and select **Deploy**.
 
-![Configure Lambda Function](/images/5.2-IngestRealTimeData/createlayer-00021.png?featherlight=false&width=70pc)
+![Configure Lambda Function](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00021.png?featherlight=false&width=70pc)
 
 8. Then, select the **Configuration** tab
 
    - Choose **Environment variables**
    - Select **Edit**
 
-![Configure Lambda Function](/images/5.2-IngestRealTimeData/createlayer-00023.png?featherlight=false&width=70pc)
+![Configure Lambda Function](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00023.png?featherlight=false&width=70pc)
 
 9. Add each environment variable one by one as follows:
 

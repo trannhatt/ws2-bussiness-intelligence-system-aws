@@ -10,7 +10,7 @@ pre: " <b> 2. </b> "
 
 Before diving into the implementation of your project, it's crucial to set up the necessary resources in your AWS environment. This section outlines the key steps involved in preparing your resources for the project. These steps include creating an IAM user, setting up a Virtual Private Cloud (VPC), configuring security groups, launching and configuring EC2 instances as bastion.
 
-![Project Setup](/images/2/projectSetup.png?featherlight=false&width=70pc)
+![Project Setup](/ws2-bussiness-intelligence-system-aws/images/2/projectSetup.png?featherlight=false&width=70pc)
 
 ### Contents
 

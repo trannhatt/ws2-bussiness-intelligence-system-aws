@@ -10,7 +10,7 @@ pre: " <b> 3. </b> "
 
 This section focuses on the data collection and storage process. We will explore receiving input data using Kinesis Data Streams, storing data to S3 using Kinesis Data Firehose, and verifying the operation of the data pipeline.
 
-![Architecture Workshop 2 - part 3](/images/3/arch3.png?featherlight=false&width=70pc)
+![Architecture Workshop 2 - part 3](/ws2-bussiness-intelligence-system-aws/images/3/arch3.png?featherlight=false&width=70pc)
 
 ### Content
 
