@@ -1,0 +1,72 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:PutObject",
+                "s3:ListBucket",
+                "s3:DeleteObject",
+                "s3:GetObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::aws-analytics-businesss-intelligence-ws2/*",
+                "arn:aws:s3:::aws-analytics-businesss-intelligence-ws2"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "athena:GetWorkGroup",
+                "athena:CreatePresignedNotebookUrl",
+                "athena:TerminateSession",
+                "athena:GetSession",
+                "athena:GetSessionStatus",
+                "athena:ListSessions",
+                "athena:StartCalculationExecution",
+                "athena:GetCalculationExecutionCode",
+                "athena:StopCalculationExecution",
+                "athena:ListCalculationExecutions",
+                "athena:GetCalculationExecution",
+                "athena:GetCalculationExecutionStatus",
+                "athena:ListExecutors",
+                "athena:ExportNotebook",
+                "athena:UpdateNotebook"
+            ],
+            "Resource": "arn:aws:athena:us-east-1:809215934314:workgroup/athena-notebook-bi-system-ws2"
+        },
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "logs:CreateLogStream",
+                "logs:DescribeLogStreams",
+                "logs:CreateLogGroup",
+                "logs:PutLogEvents"
+            ],
+            "Resource": [
+                "arn:aws:logs:us-east-1:809215934314:log-group:/aws-athena:*",
+                "arn:aws:logs:us-east-1:809215934314:log-group:/aws-athena*:log-stream:*"
+            ]
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": "logs:DescribeLogGroups",
+            "Resource": "arn:aws:logs:us-east-1:809215934314:log-group:*"
+        },
+        {
+            "Sid": "VisualEditor2",
+            "Effect": "Allow",
+            "Action": [
+                "cloudwatch:PutMetricData"
+            ],
+            "Resource": "*",
+            "Condition": {
+                "StringEquals": {
+                    "cloudwatch:namespace": "AmazonAthenaForApacheSpark"
+                }
+            }
+        }
+    ]
+}
