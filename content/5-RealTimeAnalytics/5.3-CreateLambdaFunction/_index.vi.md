@@ -1,12 +1,12 @@
 ---
-title: "Tạo và cấu hình AWS Lambda Function"
+title: "Tạo AWS Lambda Function"
 date: "`r Sys.Date()`"
 weight: 3
 chapter: false
 pre: " <b> 5.3 </b> "
 ---
 
-### Tạo và cấu hình AWS Lambda Function
+### Tạo AWS Lambda Function
 
 1. Tại giao diện **AWS Lambda**
 
@@ -35,8 +35,6 @@ pre: " <b> 5.3 </b> "
 5. Di chuyển xuống cuối trang hiện tại, trong phần **Layers** chọn **Add a layer**
 
 ![Configure Lambda Function](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00018.png?featherlight=false&width=70pc)
-
-### Cấu hình AWS Lambda Function
 
 6. Tại giao diện **Add layer**,
 

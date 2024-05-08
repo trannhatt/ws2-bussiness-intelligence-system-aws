@@ -8,6 +8,8 @@ pre: " <b> 4. </b> "
 
 ### Introduction
 
+In this section, we will explore how to analyze and leverage data on the AWS cloud environment. Firstly, we'll learn about utilizing Amazon Athena for flexible and efficient data analysis. Next, we'll delve into data visualization using Amazon QuickSight, enhancing our understanding of extracted insights. Following that, we'll dive into the application of machine learning for data analysis with Amazon SageMaker. Finally, we'll discover how to combine and process small files stored in Amazon S3 to generate larger files using AWS Lambda Function.
+
 ![Architecture Workshop 2 - part 4](/ws2-bussiness-intelligence-system-aws/images/4/arch4.png?featherlight=false&width=70pc)
 
 #### Contents

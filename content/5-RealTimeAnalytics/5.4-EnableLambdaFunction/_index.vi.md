@@ -8,6 +8,8 @@ pre: " <b> 5.4 </b> "
 
 ### Kích hoạt AWS Lambda Function để nhập bản ghi vào Amazon OpenSearch
 
+#### Thiết lập SSH Tunneling
+
 {{% notice info %}}
 Ban đầu chúng ta đã tạo cụm Amazon OpenSearch trong VPC. Do đó, Amazon OpenSearch endpoint và Kibana endpoint chưa truy cập được thông qua internet. Vì vậy, để truy cập được các endpoint này chúng ta phải tạo ssh tunnel và thực hiện chuyển tiếp cổng cục bộ.
 {{% /notice %}}
@@ -52,18 +54,19 @@ Host estunnel
 
 ![Configure Lambda Function](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00049.png?featherlight=false&width=70pc)
 
-5. Chúng ta đã truy cập Amazon OpenSearch Service thành công, đây là giao diện màn hình chính
+5. Chúng ta đã truy cập Amazon OpenSearch Service thành công, đây là giao diện màn hình chính.
 
 ![Configure Lambda Function](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00050.png?featherlight=false&width=70pc)
 
-6. Tiếp theo, tại màn hình chính
+#### Tạo Role
 
-   - Chọn vào biểu tượng thanh công cụ ở bên trái nút **Home**
-   - Chọn **Security**.
+6. Tại màn hình chính
+
+   - Chọn vào biểu tượng thanh công cụ ở bên trái nút **Home** và chọn **Security**.
 
 ![Configure Lambda Function](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00051.png?featherlight=false&width=70pc)
 
-7. Tại giao diện **Get started**, chọn **Create new role**
+1. Tại giao diện **Get started**, chọn **Create new role**
 
 ![Configure Lambda Function](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00052.png?featherlight=false&width=70pc)
 
@@ -74,31 +77,31 @@ Host estunnel
 
 ![Configure Lambda Function](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00053.png?featherlight=false&width=70pc)
 
-9. Tại mục **Index permissions**, thêm 3 actions là **crud**, **create_index** và **manage**
+9. Tại mục **Index permissions**, thêm các hành động **crud**, **create_index** và **manage**.
 
 ![Configure Lambda Function](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00054.png?featherlight=false&width=70pc)
 
-10. Cuối cùng chọn **Create** để hoàn tất việc tạo Role
+10. Cuối cùng chọn **Create** để hoàn tất việc tạo Role.
 
 ![Configure Lambda Function](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00055.png?featherlight=false&width=70pc)
 
-11. Role được tạo với các cấu hình như ảnh
+11. Role được tạo với các cấu hình như ảnh.
 
 ![Configure Lambda Function](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00056.png?featherlight=false&width=70pc)
 
-12. Tiếp theo, chọn tab **Mapped users**
+#### Map Role
 
-    - Chọn **Map users**
+12. Chọn tab **Mapped users** và sau đó chọn **Map users**
 
 ![Configure Lambda Function](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00057.png?featherlight=false&width=70pc)
 
-13. Trong phần **Map user**,
+13. Trong phần **Map user**:
 
 - Tại mục **Backend roles**, nhập IAM ARN mà Lambda Function đang sử dụng
 - Chọn **Map**
 
 ![Configure Lambda Function](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00058.png?featherlight=false&width=70pc)
 
-14. Kiểm tra việc ánh xạ thành công
+14. Kiểm tra ánh xạ đã thành công
 
 ![Configure Lambda Function](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00059.png?featherlight=false&width=70pc)
