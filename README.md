@@ -1,6 +1,6 @@
 <h1 align="center">
   <img alt="pipeline diagram" src="arch.png" width="70%"/><br/>
-BUILD A THREE-TIER ARCHITECTURE FOR DEPLOY LAMP STACK APPLICATION ON AWS
+BUILDING A BUSINESS INTELLIGENCE SYSTEM (BI) FROM SCRATCH ON AWS
 </h1>
 <p align="center"><br/>Focusing on the application of <b>DevOps</b> tools.</p>
 
@@ -13,12 +13,11 @@ BUILD A THREE-TIER ARCHITECTURE FOR DEPLOY LAMP STACK APPLICATION ON AWS
 
 # Workshop Overview 
 
-In this workshop, you will learn about building a three-tier architecture with high availability and fault tolerance to deploy a **LAMP STACK** application on **AWS**. We will leverage various **AWS** services using the **management console**.
+In this project, we will construct a Business Intelligence system employing AWS analytics services. Through this project, we will learn how to set up the process Data Collection -> Data Storage -> Data Analysis/Processing -> Data Visualization.
 
 # Link Gitpage: 
 
-https://trannhatt.github.io/workshop1-FCJ2024/
-
+https://trannhatt.github.io/ws2-bussiness-intelligence-system-aws/
 
 
 
