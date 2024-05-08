@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="pipeline diagram" src="archmain.png" width="70%"/><br/>
+  <img alt="pipeline diagram" src="archmain.png" width="100%"/><br/>
 BUILDING A BUSINESS INTELLIGENCE SYSTEM (BI) FROM SCRATCH ON AWS
 </h1>
 <p align="center"><br/>Focusing on the application of <b>DevOps</b> tools.</p>
