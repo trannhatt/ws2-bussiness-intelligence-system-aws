@@ -38,6 +38,22 @@ Host estunnel
 
 ![Configure Lambda Function](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00046.png?featherlight=false&width=50pc)
 
+{{% notice info %}}
+Additionally, we can create a Lambda layer using a Lambda-simulated environment with Docker.
+{{% /notice %}}
+
+```shell script
+$ cat <<EOF > requirements.txt
+> opensearch-py==2.0.1
+> requests==2.31.0
+> requests-aws4auth==1.1.2
+> EOF
+$ docker run -v "$PWD":/var/task "public.ecr.aws/sam/build-python3.11" /bin/sh -c "pip install -r requirements.txt -t python/lib/python3.11/site-packages/; exit"
+$ zip -r es-lib.zip python > /dev/null
+$ aws s3 mb s3://my-bucket-for-lambda-layer-packages
+$ aws s3 cp es-lib.zip s3://my-bucket-for-lambda-layer-packages/var/
+```
+
 2. Finally, run the command **`ssh -N estunnel`** in the Terminal
 
 ![Configure Lambda Function](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00048.png?featherlight=false&width=50pc)
