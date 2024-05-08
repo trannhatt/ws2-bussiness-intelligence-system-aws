@@ -10,7 +10,7 @@ pre: " <b> 5. </b> "
 
 Phần này đi sâu vào phân tích dữ liệu thời gian thực, chúng ta sẽ tạo Amazon OpenSearch Service, thêm các thư viện phổ biến vào AWS Lambda Layer, tạo và cấu hình AWS Lambda Function, kích hoạt AWS Lambda Function để nhập bản ghi vào Amazon OpenSearch và trực quan hóa dữ liệu bằng OpenSearch Dashboards. Chúng ta sẽ học được cách phân tích dữ liệu thời gian thực một cách hiệu quả và trực quan hóa thông tin chi tiết phục vụ cho mục đích ra quyết định.
 
-![Architecture Workshop 2 - part 5](/images/5/arch5.png?featherlight=false&width=70pc)
+![Architecture Workshop 2 - part 5](/ws2-bussiness-intelligence-system-aws/images/5/arch5.png?featherlight=false&width=70pc)
 
 ### Nội dung
 

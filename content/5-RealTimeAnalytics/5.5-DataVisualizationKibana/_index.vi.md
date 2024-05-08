@@ -1,5 +1,5 @@
 ---
-title: "Trực quan hóa dữ liệu với OpenSearch Dashboardsa"
+title: "Trực quan hóa dữ liệu với OpenSearch Dashboards"
 date: "`r Sys.Date()`"
 weight: 5
 chapter: false
