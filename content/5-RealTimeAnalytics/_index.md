@@ -18,4 +18,4 @@ This section delves into real-time data analysis, where we will create Amazon Op
 - [5.2 Add Common Libraries to AWS Lambda Layer](5.2-IngestRealTimeData/)
 - [5.3 Create AWS Lambda Function](5.3-CreateLambdaFunction/)
 - [5.4 Activate AWS Lambda Function to Ingest Records into Amazon OpenSearch](5.4-EnableLambdaFunction/)
-- [5.5 Visualize Data with Kibana](5.5-DataVisualizationKibana/)
+- [5.5 Visualize Data with OpenSearch Dashboards](5.5-DataVisualizationKibana/)
