@@ -128,7 +128,7 @@ plt.show()
 
 ![SageMaker](/ws2-bussiness-intelligence-system-aws/images/4.3-AthenaAndSageMaker/sagemaker-00019.png?featherlight=false&width=70pc)
 
-1.  Chúng ta có thể sử dụng mô hình Linear Regression để dự đoán số lượng hàng bán ra dựa trên giá. Bằng cách này, chúng ta có thể xem xét mối quan hệ giữa giá và số lượng hàng bán ra, một phần quan trọng của phân tích dữ liệu kinh doanh và tiếp thị, như ví dụ bên dưới chúng ta bạn sẽ vẽ biểu đồ dữ liệu bằng thư viện matplotlib.
+16. Chúng ta có thể sử dụng mô hình Linear Regression để dự đoán số lượng hàng bán ra dựa trên giá. Bằng cách này, chúng ta có thể xem xét mối quan hệ giữa giá và số lượng hàng bán ra, một phần quan trọng của phân tích dữ liệu kinh doanh và tiếp thị, như ví dụ bên dưới chúng ta bạn sẽ vẽ biểu đồ dữ liệu bằng thư viện matplotlib.
 
 ```python
 from sklearn.linear_model import LinearRegression

@@ -8,7 +8,7 @@ pre: " <b> 4. </b> "
 
 ### Giới thiệu
 
-Trong phần này, chúng ta sẽ khám phá cách phân tích và tận dụng dữ liệu trên môi trường đám mây AWS. Đầu tiên, chúng ta sẽ tìm hiểu về cách sử dụng Amazon Athena để phân tích dữ liệu một cách linh hoạt và hiệu quả. Tiếp theo, chúng ta sẽ khám phá cách trực quan hóa dữ liệu bằng cách sử dụng Amazon QuickSight, giúp chúng ta hiểu rõ hơn về thông tin được trích xuất. Sau đó, chúng ta sẽ đi sâu vào ứng dụng của machine learning trong việc phân tích dữ liệu với Amazon SageMaker. Cuối cùng là sẽ khám phá cách kết hợp và xử lý các tệp nhỏ được lưu trữ trong Amazon S3 để tạo ra các tệp lớn hơn bằng cách sử dụng AWS Lambda Function.
+Trong phần này, chúng ta sẽ khám phá cách phân tích và tận dụng dữ liệu trên môi trường đám mây AWS. Đầu tiên, chúng ta sẽ tìm hiểu về cách sử dụng Amazon Athena để phân tích dữ liệu một cách hiệu quả và linh hoạt. Từ đó dùng nó để khám phá bằng cách trực quan hóa dữ liệu sử dụng Amazon QuickSight, để hiểu rõ hơn về thông tin được trích xuất. Sau đó, chúng ta sẽ đi sâu vào ứng dụng của machine learning trong việc phân tích dữ liệu với Amazon SageMaker. Ngoài ra, chúng ta cũng sẽ khám phá cách kết hợp và xử lý các tệp nhỏ được lưu trữ trong Amazon S3 để tạo ra các tệp lớn hơn bằng cách sử dụng AWS Lambda Function.
 
 ![Architecture Workshop 2 - part 4](/ws2-bussiness-intelligence-system-aws/images/4/arch4.png?featherlight=false&width=70pc)
 

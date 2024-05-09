@@ -47,7 +47,7 @@ pre: " <b> 5.3 </b> "
 
 ![Configure Lambda Function](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00019.png?featherlight=false&width=70pc)
 
-7. Tiếp theo, chúng ta sẽ sao chép và dán mã từ tệp **upsert_to_es.py** vào trình soạn thảo mã của **Code source** và chọn **Deploy**
+7. Tiếp theo, chúng ta sẽ sao chép và dán mã từ tệp **`upsert_to_es.py`** vào trình soạn thảo mã của **Code source** và chọn **Deploy**
 
 ![Configure Lambda Function](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00021.png?featherlight=false&width=70pc)
 
@@ -80,7 +80,7 @@ REGION_NAME=us-east-1
 DATE_TYPE_FIELDS=InvoiceDate
 ```
 
-- chọn **Save** để lưu thay đổi
+- Chọn **Save** để lưu thay đổi
 
 ![Configure Lambda Function](/ws2-bussiness-intelligence-system-aws/images/5.2-IngestRealTimeData/createlayer-00024.png?featherlight=false&width=70pc)
 
