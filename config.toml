@@ -19,7 +19,7 @@ home = [ "HTML", "RSS", "JSON"]
   
 [Languages]
 [Languages.en]
-title = "Start with Amazon VPC and AWS VPN Site-to-Site."
+title = "Building a Business Intelligence (BI) System from Scratch on AWS"
 weight = 1
 languageName = "English"
 
@@ -36,7 +36,7 @@ url = "https://www.facebook.com/groups/awsstudygroupfcj"
 weight = 20
 
 [Languages.vi]
-title = "Bắt đầu với Amazon VPC và AWS VPN Site to Site"
+title = "Xây dựng hệ thống Trí Tuệ Kinh Doanh từ đầu trên AWS"
 weight = 2
 languageName = "Tiếng Việt"
 
